@@ -21,7 +21,7 @@ There's some useful scripts in the repository already, and more will come. Feel 
 Remember: auto-completion with `TAB` is your friend! 
 
 # Contributing
-Feel free to add PRs or make suggestions/requests via the issues tracker, or just Slack me @lorenzo.
+Feel free to add PRs or make suggestions/requests via the issues tracker or the development branch
 
 # Notes
 * The filters are not stacked. If you run `filter-A` and then `filter-B`, it is possible that `filter-B` will override (part of) `filter-A`.
