@@ -1,0 +1,4 @@
+# @synopsis: filter_in_channel_name <name> 
+# @description: Shows only messages whose channel name matches <name>. Example: filter_in_channel_name Animations
+
+:eval :filter-in "^\\s*(?<timestamp>\\d+-\\d+\\s\\d+:\\d+:\\d+\\.\\d{3})\\s+\\d+\\s+\\d+\\s(?<level>[WIDEF])\\s+(?<channel>[\\w-]+)\\s*:\\s*(?:\\(t:\\d+\\))*\\s*(?<channel_level>\\[\\w+\\])*(?<channel_name>\\[@$1\\])+.*"

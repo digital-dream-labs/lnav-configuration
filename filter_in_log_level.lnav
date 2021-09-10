@@ -1,0 +1,5 @@
+# @synopsis: filter_out_log_level <level> where level is one of: W, I, D, E, F 
+# @description: Filter out all the messages of certain level
+
+:eval :filter-in (?<timestamp>\\d+-\\d+\\s\\d+:\\d+:\\d+\\.\\d{3})\\s+\\d+\\s+\\d+\\s(?<level>$1)
+:eval :filter-in (?<timestamp>\\d+-\\d+\\s\\d+:\\d+:\\d+\.\\d{3})\\s+\\d+\\s+\\d+\\s.*\\[$1.+\\].*

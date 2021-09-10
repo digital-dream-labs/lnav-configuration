@@ -1,0 +1,4 @@
+# @synopsis: filter_in_message_scope_partial <name> 
+# @description: Shows only messages whose message scope partially matches <name>. Example: filter_in_channel_name ReadFromJson.RequiredUnlock
+
+:eval :filter-in "^\\s*(?<timestamp>\\d+-\\d+\\s\\d+:\\d+:\\d+\\.\\d{3})\\s+\\d+\\s+\\d+\\s(?<level>[WIDEF])\\s+(?<channel>[\\w-]+)\\s*:\\s*(?:\\(t:\\d+\\))*\\s*(?<channel_level>\\[\\w+\\])*(?<channel_name>\\[@\\w+\\])*\\s*(?<message_scope>([\\w]|\\.)*$1([\\w]|\\.)*)\\s*(?<body>.+)\\s*"

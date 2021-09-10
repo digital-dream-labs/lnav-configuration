@@ -1,0 +1,10 @@
+# @synopsis: filter_out_system_messages 
+# @description: Filter out most of the system messages
+
+:eval :filter-out cnss-daemon
+:eval :filter-out DHCP
+:eval :filter-out mm-camera
+:eval :filter-out mm-camera-intf
+#:eval :filter-out 
+#:eval :filter-out 
+
